@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+
+# Recorded samples stay on your machine
+data/
+
+# Trained models are published to Hugging Face, not committed
+models/
+
+# Demo recordings
+*.mp4
+
+# macOS
+.DS_Store
