@@ -16,6 +16,9 @@ classifiers = [
 ]
 
 dependencies = [
+    # Hand tracking and camera
+    "mediapipe>=0.10.14",          # 21 hand landmarks per frame
+    "opencv-contrib-python>=4.9",  # webcam capture and preview (the build mediapipe expects)
     "numpy>=1.26",
 ]
 
