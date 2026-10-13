@@ -20,6 +20,11 @@ dependencies = [
     "mediapipe>=0.10.14",          # 21 hand landmarks per frame
     "opencv-contrib-python>=4.9",  # webcam capture and preview (the build mediapipe expects)
     "numpy>=1.26",
+
+    # Classifier, saved and loaded in the Hugging Face format
+    "torch>=2.2",
+    "huggingface-hub>=0.24",
+    "safetensors>=0.4",
 ]
 
 [project.scripts]
@@ -27,6 +32,16 @@ yishou = "yishou.cli:main"
 
 [project.urls]
 Repository = "https://github.com/sparkup/yishou"
+
+# The classifier is a small MLP that trains in seconds on a CPU, so Linux installs
+# use the CPU build of PyTorch rather than the much larger CUDA one.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [dependency-groups]
 dev = [
