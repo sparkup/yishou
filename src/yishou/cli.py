@@ -1,4 +1,4 @@
-"""Command line entry point: collect, train, demo."""
+"""Count to ten on one hand: record samples, train the classifier, run the webcam demo."""
 
 import argparse
 from pathlib import Path
@@ -28,14 +28,19 @@ def build_parser() -> argparse.ArgumentParser:
     demo.add_argument("--threshold", type=float, default=0.6)
     demo.add_argument("--record", type=Path, default=None, help="save the preview as an mp4")
 
+    push = commands.add_parser("push", help="publish a trained model to Hugging Face")
+    push.add_argument("repo_id", help="for example your-username/yishou")
+    push.add_argument("--model", type=Path, default=DEFAULT_MODEL)
+    push.add_argument("--private", action="store_true")
+
     return parser
 
 
 def main(argv: list[str] | None = None) -> None:
     args = build_parser().parse_args(argv)
 
-    # Imports are deferred so that `train` never touches the camera stack, and
-    # `--help` stays instant.
+    # Imports are deferred so that `train` and `push` never touch the camera stack,
+    # and `--help` stays instant.
     match args.command:
         case "collect":
             from yishou.collect import collect
@@ -49,6 +54,10 @@ def main(argv: list[str] | None = None) -> None:
             from yishou.demo import demo
 
             demo(args.model, args.camera, args.threshold, args.record)
+        case "push":
+            from yishou.hub import push
+
+            print(push(args.model, args.repo_id, args.private))
 
 
 if __name__ == "__main__":
