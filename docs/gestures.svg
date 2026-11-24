@@ -1,194 +1,207 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1010" viewBox="0 0 1200 1010">
-<defs><radialGradient id="glow-purple" cx="0.12" cy="0" r="0.6"><stop offset="0" stop-color="#7c3aed" stop-opacity="0.35"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient><radialGradient id="glow-blue" cx="0.88" cy="0" r="0.55"><stop offset="0" stop-color="#22a7f0" stop-opacity="0.22"/><stop offset="1" stop-color="#22a7f0" stop-opacity="0"/></radialGradient><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1020" stop-opacity="1"/><stop offset="1" stop-color="#0b1020" stop-opacity="0"/></linearGradient></defs>
-<rect width="1200" height="1010" fill="#0b1020"/>
-<rect width="1200" height="260" fill="url(#glow-purple)"/>
-<rect width="1200" height="260" fill="url(#glow-blue)"/>
-<text letter-spacing="2.5" x="600.0" y="70" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#22a7f0" text-anchor="middle">CHINESE NUMBER GESTURES</text>
-<text x="600.0" y="118" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="600" fill="#e7eaf0" text-anchor="middle">Counting to ten on one hand</text>
-<text x="600.0" y="156" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">1 to 5 match Western counting. 6 to 10 each have their own shape.</text>
+<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D0F14" stop-opacity="1"/><stop offset="1" stop-color="#0D0F14" stop-opacity="0"/></linearGradient></defs>
+<rect width="1200" height="1010" fill="#0D0F14"/>
+<rect x="48" y="0" width="48" height="48" fill="#1C2130" opacity="1.00"/>
+<rect x="192" y="96" width="48" height="48" fill="#1C2130" opacity="0.67"/>
+<rect x="432" y="48" width="48" height="48" fill="#1C2130" opacity="0.83"/>
+<rect x="624" y="144" width="48" height="48" fill="#1C2130" opacity="0.50"/>
+<rect x="816" y="0" width="48" height="48" fill="#1C2130" opacity="1.00"/>
+<rect x="960" y="96" width="48" height="48" fill="#1C2130" opacity="0.67"/>
+<rect x="1056" y="192" width="48" height="48" fill="#1C2130" opacity="0.33"/>
+<rect x="288" y="192" width="48" height="48" fill="#1C2130" opacity="0.33"/>
+<rect x="720" y="240" width="48" height="48" fill="#1C2130" opacity="0.17"/>
+<path d="M0 48H1200 M48 0V48 M96 0V48 M144 0V48 M192 0V48 M240 0V48 M288 0V48 M336 0V48 M384 0V48 M432 0V48 M480 0V48 M528 0V48 M576 0V48 M624 0V48 M672 0V48 M720 0V48 M768 0V48 M816 0V48 M864 0V48 M912 0V48 M960 0V48 M1008 0V48 M1056 0V48 M1104 0V48 M1152 0V48 M1200 0V48" stroke="#171B26" opacity="1.00"/>
+<path d="M0 96H1200 M48 48V96 M96 48V96 M144 48V96 M192 48V96 M240 48V96 M288 48V96 M336 48V96 M384 48V96 M432 48V96 M480 48V96 M528 48V96 M576 48V96 M624 48V96 M672 48V96 M720 48V96 M768 48V96 M816 48V96 M864 48V96 M912 48V96 M960 48V96 M1008 48V96 M1056 48V96 M1104 48V96 M1152 48V96 M1200 48V96" stroke="#171B26" opacity="0.83"/>
+<path d="M0 144H1200 M48 96V144 M96 96V144 M144 96V144 M192 96V144 M240 96V144 M288 96V144 M336 96V144 M384 96V144 M432 96V144 M480 96V144 M528 96V144 M576 96V144 M624 96V144 M672 96V144 M720 96V144 M768 96V144 M816 96V144 M864 96V144 M912 96V144 M960 96V144 M1008 96V144 M1056 96V144 M1104 96V144 M1152 96V144 M1200 96V144" stroke="#171B26" opacity="0.67"/>
+<path d="M0 192H1200 M48 144V192 M96 144V192 M144 144V192 M192 144V192 M240 144V192 M288 144V192 M336 144V192 M384 144V192 M432 144V192 M480 144V192 M528 144V192 M576 144V192 M624 144V192 M672 144V192 M720 144V192 M768 144V192 M816 144V192 M864 144V192 M912 144V192 M960 144V192 M1008 144V192 M1056 144V192 M1104 144V192 M1152 144V192 M1200 144V192" stroke="#171B26" opacity="0.50"/>
+<path d="M0 240H1200 M48 192V240 M96 192V240 M144 192V240 M192 192V240 M240 192V240 M288 192V240 M336 192V240 M384 192V240 M432 192V240 M480 192V240 M528 192V240 M576 192V240 M624 192V240 M672 192V240 M720 192V240 M768 192V240 M816 192V240 M864 192V240 M912 192V240 M960 192V240 M1008 192V240 M1056 192V240 M1104 192V240 M1152 192V240 M1200 192V240" stroke="#171B26" opacity="0.33"/>
+<path d="M0 288H1200 M48 240V288 M96 240V288 M144 240V288 M192 240V288 M240 240V288 M288 240V288 M336 240V288 M384 240V288 M432 240V288 M480 240V288 M528 240V288 M576 240V288 M624 240V288 M672 240V288 M720 240V288 M768 240V288 M816 240V288 M864 240V288 M912 240V288 M960 240V288 M1008 240V288 M1056 240V288 M1104 240V288 M1152 240V288 M1200 240V288" stroke="#171B26" opacity="0.17"/>
+<text x="600.0" y="70" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#A996FF" text-anchor="middle">// chinese number gestures</text>
+<text x="600.0" y="118" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#E6E8EE" text-anchor="middle">Counting to ten on one hand</text>
+<text x="600.0" y="156" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">1 to 5 match Western counting. 6 to 10 each have their own shape.</text>
 <g transform="translate(120.0 410) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -35.7,137.9 -37.3,161.8 -38.7,181.8" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -35.7,137.9 -37.3,161.8 -38.7,181.8" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -35.7,137.9 -37.3,161.8 -38.7,181.8" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -35.7,137.9 -37.3,161.8 -38.7,181.8" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="120.0" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e7eaf0" text-anchor="middle">1</text>
-<text x="120.0" y="518" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">一  yī</text>
-<text x="120.0" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Index up</text>
+<text x="120.0" y="486" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#E6E8EE" text-anchor="middle">1</text>
+<text x="120.0" y="518" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">一  yī</text>
+<text x="120.0" y="546" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Index up</text>
 <g transform="translate(360.0 410) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -6.6,147.8 -3.8,174.6 -1.6,195.5" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -6.6,147.8 -3.8,174.6 -1.6,195.5" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -6.6,147.8 -3.8,174.6 -1.6,195.5" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -6.6,147.8 -3.8,174.6 -1.6,195.5" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="360.0" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e7eaf0" text-anchor="middle">2</text>
-<text x="360.0" y="518" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">二  èr</text>
-<text x="360.0" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Index and middle up</text>
+<text x="360.0" y="486" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#E6E8EE" text-anchor="middle">2</text>
+<text x="360.0" y="518" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">二  èr</text>
+<text x="360.0" y="546" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Index and middle up</text>
 <g transform="translate(600.0 410) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -12.5,148.0 -13.4,175.0 -14.1,195.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 17.9,141.4 22.3,166.0 25.8,185.7" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -12.5,148.0 -13.4,175.0 -14.1,195.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 17.9,141.4 22.3,166.0 25.8,185.7" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -12.5,148.0 -13.4,175.0 -14.1,195.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 17.9,141.4 22.3,166.0 25.8,185.7" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -41.5,137.0 -46.9,160.4 -51.4,179.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -12.5,148.0 -13.4,175.0 -14.1,195.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 17.9,141.4 22.3,166.0 25.8,185.7" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="600.0" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e7eaf0" text-anchor="middle">3</text>
-<text x="600.0" y="518" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">三  sān</text>
-<text x="600.0" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Index, middle</text>
-<text x="600.0" y="567" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">and ring up</text>
+<text x="600.0" y="486" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#E6E8EE" text-anchor="middle">3</text>
+<text x="600.0" y="518" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">三  sān</text>
+<text x="600.0" y="546" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Index, middle</text>
+<text x="600.0" y="567" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">and ring up</text>
 <g transform="translate(840.0 410) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="840.0" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e7eaf0" text-anchor="middle">4</text>
-<text x="840.0" y="518" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">四  sì</text>
-<text x="840.0" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Four fingers up,</text>
-<text x="840.0" y="567" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">thumb folded</text>
+<text x="840.0" y="486" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#E6E8EE" text-anchor="middle">4</text>
+<text x="840.0" y="518" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">四  sì</text>
+<text x="840.0" y="546" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Four fingers up,</text>
+<text x="840.0" y="567" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">thumb folded</text>
 <g transform="translate(1080.0 410) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -58.0,52.0 -78.0,75.0 -92.0,95.0" fill="none" stroke="#e7eaf0" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -58.0,52.0 -78.0,75.0 -92.0,95.0" fill="none" stroke="#3c4357" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -58.0,52.0 -78.0,75.0 -92.0,95.0" fill="none" stroke="#E6E8EE" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -40.9,137.2 -45.9,160.6 -50.0,180.2" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -13.2,147.9 -14.6,174.9 -15.7,195.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,102.0 15.2,141.8 17.8,166.6 19.9,186.5" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,92.0 40.3,120.8 45.8,140.1 50.5,156.4" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -58.0,52.0 -78.0,75.0 -92.0,95.0" fill="none" stroke="#262B3B" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="1080.0" y="486" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e7eaf0" text-anchor="middle">5</text>
-<text x="1080.0" y="518" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">五  wǔ</text>
-<text x="1080.0" y="546" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Open hand</text>
+<text x="1080.0" y="486" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#E6E8EE" text-anchor="middle">5</text>
+<text x="1080.0" y="518" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">五  wǔ</text>
+<text x="1080.0" y="546" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Open hand</text>
 <g transform="translate(120.0 820) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="32.0,92.0 47.0,118.0 57.0,135.3 65.5,150.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#e7eaf0" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="32.0,92.0 47.0,118.0 57.0,135.3 65.5,150.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#3c4357" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="32.0,92.0 47.0,118.0 57.0,135.3 65.5,150.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#E6E8EE" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="32.0,92.0 47.0,118.0 57.0,135.3 65.5,150.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#262B3B" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="120.0" y="896" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22a7f0" text-anchor="middle">6</text>
-<text x="120.0" y="928" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">六  liù</text>
-<text x="120.0" y="956" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Thumb and</text>
-<text x="120.0" y="977" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">little finger out</text>
+<text x="120.0" y="896" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22A7F0" text-anchor="middle">6</text>
+<text x="120.0" y="928" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">六  liù</text>
+<text x="120.0" y="956" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Thumb and</text>
+<text x="120.0" y="977" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">little finger out</text>
 <g transform="translate(360.0 820) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -38.0,128.0 -28.0,160.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -12.0,132.0 -28.0,160.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -52.0,62.0 -48.0,112.0 -28.0,160.0" fill="none" stroke="#e7eaf0" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -38.0,128.0 -28.0,160.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,106.0 -12.0,132.0 -28.0,160.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -52.0,62.0 -48.0,112.0 -28.0,160.0" fill="none" stroke="#3c4357" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -38.0,128.0 -28.0,160.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -12.0,132.0 -28.0,160.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -52.0,62.0 -48.0,112.0 -28.0,160.0" fill="none" stroke="#E6E8EE" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -38.0,128.0 -28.0,160.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,106.0 -12.0,132.0 -28.0,160.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -52.0,62.0 -48.0,112.0 -28.0,160.0" fill="none" stroke="#262B3B" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="360.0" y="896" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22a7f0" text-anchor="middle">7</text>
-<text x="360.0" y="928" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">七  qī</text>
-<text x="360.0" y="956" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Thumb, index and</text>
-<text x="360.0" y="977" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">middle pinched</text>
+<text x="360.0" y="896" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22A7F0" text-anchor="middle">7</text>
+<text x="360.0" y="928" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">七  qī</text>
+<text x="360.0" y="956" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Thumb, index and</text>
+<text x="360.0" y="977" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">middle pinched</text>
 <g transform="translate(600.0 820) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -35.0,137.9 -36.2,161.9 -37.3,181.9" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#e7eaf0" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="-33.0,100.0 -35.0,137.9 -36.2,161.9 -37.3,181.9" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#3c4357" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -35.0,137.9 -36.2,161.9 -37.3,181.9" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#E6E8EE" stroke-width="29" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="-33.0,100.0 -35.0,137.9 -36.2,161.9 -37.3,181.9" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -56.0,40.0 -78.0,48.0 -98.0,54.0" fill="none" stroke="#262B3B" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="600.0" y="896" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22a7f0" text-anchor="middle">8</text>
-<text x="600.0" y="928" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">八  bā</text>
-<text x="600.0" y="956" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Thumb and index,</text>
-<text x="600.0" y="977" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">an L shape</text>
+<text x="600.0" y="896" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22A7F0" text-anchor="middle">8</text>
+<text x="600.0" y="928" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">八  bā</text>
+<text x="600.0" y="956" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Thumb and index,</text>
+<text x="600.0" y="977" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">an L shape</text>
 <g transform="translate(840.0 820) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -35.0,138.0 -24.0,154.0 -17.0,136.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,100.0 -35.0,138.0 -24.0,154.0 -17.0,136.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -35.0,138.0 -24.0,154.0 -17.0,136.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,100.0 -35.0,138.0 -24.0,154.0 -17.0,136.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="840.0" y="896" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22a7f0" text-anchor="middle">9</text>
-<text x="840.0" y="928" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">九  jiǔ</text>
-<text x="840.0" y="956" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Index finger hooked</text>
+<text x="840.0" y="896" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22A7F0" text-anchor="middle">9</text>
+<text x="840.0" y="928" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">九  jiǔ</text>
+<text x="840.0" y="956" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Index finger hooked</text>
 <g transform="translate(1080.0 820) scale(0.95 -0.95)">
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#e7eaf0" stroke="#e7eaf0" stroke-width="6" stroke-linejoin="round"/>
-<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#3c4357"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#e7eaf0" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#3c4357" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#E6E8EE" stroke="#E6E8EE" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="-31.0,-45.0 29.0,-45.0 29.0,-5.0 42.0,50.0 44.0,88.0 24.0,104.0 -10.0,112.0 -44.0,104.0 -46.0,60.0 -36.0,25.0 -31.0,-5.0" fill="#262B3B"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="32.0,94.0 32.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="11.0,104.0 11.0,68.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-11.0,108.0 -11.0,72.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-33.0,102.0 -33.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#E6E8EE" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-28.0,22.0 -40.0,50.0 -12.0,63.0 16.0,66.0" fill="none" stroke="#262B3B" stroke-width="21" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="-60" y="-50" width="120" height="44" fill="url(#fade)"/>
 </g>
-<text x="1080.0" y="896" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22a7f0" text-anchor="middle">10</text>
-<text x="1080.0" y="928" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#a8b0c0" text-anchor="middle">十  shí</text>
-<text x="1080.0" y="956" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#e7eaf0" text-anchor="middle">Closed fist</text>
+<text x="1080.0" y="896" font-family="'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#22A7F0" text-anchor="middle">10</text>
+<text x="1080.0" y="928" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#9AA1B2" text-anchor="middle">十  shí</text>
+<text x="1080.0" y="956" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#B4BAC8" text-anchor="middle">Closed fist</text>
 </svg>
