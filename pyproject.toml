@@ -1,6 +1,6 @@
 [project]
 name = "yishou"
-version = "0.1.0"
+version = "0.2.0"
 description = "Webcam classifier for the Chinese one-hand number gestures, 1 to 10"
 authors = [
     { name = "David Worsley-Tonks", email = "david.worsley.tonks@gmail.com" }
@@ -31,7 +31,9 @@ dependencies = [
 yishou = "yishou.cli:main"
 
 [project.urls]
+Homepage = "https://yishou.sparkup.dev"
 Repository = "https://github.com/sparkup/yishou"
+Model = "https://huggingface.co/dworsleytonks/yishou"
 
 # The classifier is a small MLP that trains in seconds on a CPU, so Linux installs
 # use the CPU build of PyTorch rather than the much larger CUDA one.
