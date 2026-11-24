@@ -3,12 +3,15 @@
 import argparse
 from pathlib import Path
 
+from yishou import __version__
+
 DEFAULT_DATA = Path("data/samples.csv")
 DEFAULT_MODEL = Path("models/latest")
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="yishou", description=__doc__)
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     commands = parser.add_subparsers(dest="command", required=True)
 
     collect = commands.add_parser("collect", help="record labelled samples from the webcam")
