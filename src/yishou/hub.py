@@ -32,8 +32,8 @@ the 21 hand landmarks produced by MediaPipe.
 
 ## Gestures
 
-| Class | Hand shape |
-| --- | --- |
+| Class | Hand shape | Validation accuracy |
+| --- | --- | --- |
 {gesture_rows}
 
 ## Evaluation
@@ -50,14 +50,26 @@ webcam, so expect lower accuracy on other hands, cameras and lighting.
 pip install git+{github_url}
 yishou demo --model {repo_id}
 ```
+
+To see how it does on your own hand, record a few bursts per gesture and score them:
+
+```bash
+yishou collect --data mine.csv
+yishou evaluate mine.csv --model {repo_id}
+```
 """
+
+
+def accuracy(score: float | None) -> str:
+    return "n/a" if score is None else f"{score:.1%}"
 
 
 def model_card(model_dir: Path, repo_id: str) -> str:
     """The README shown on the model's Hugging Face page, with the gestures and accuracy."""
     metrics_path = model_dir / "metrics.json"
-    if metrics_path.exists():
-        metrics = json.loads(metrics_path.read_text())
+    metrics = json.loads(metrics_path.read_text()) if metrics_path.exists() else {}
+    per_gesture = metrics.get("val_accuracy_per_gesture", {})
+    if metrics:
         evaluation = (
             f"Validation accuracy: **{metrics['val_accuracy']:.1%}** "
             f"({metrics['val_samples']} validation frames, "
@@ -69,7 +81,10 @@ def model_card(model_dir: Path, repo_id: str) -> str:
     return CARD_TEMPLATE.format(
         num_classes=len(GESTURES),
         github_url=GITHUB_URL,
-        gesture_rows="\n".join(f"| {g.name} | {g.description} |" for g in GESTURES),
+        gesture_rows="\n".join(
+            f"| {g.name} | {g.description} | {accuracy(per_gesture.get(g.name))} |"
+            for g in GESTURES
+        ),
         evaluation=evaluation,
         repo_id=repo_id,
     )
