@@ -1,4 +1,4 @@
-"""Count to ten on one hand: record samples, train the classifier, run the webcam demo."""
+"""Count to ten on one hand: record samples, train and test the classifier, run the demo."""
 
 import argparse
 from pathlib import Path
@@ -19,6 +19,14 @@ def build_parser() -> argparse.ArgumentParser:
     train.add_argument("--data", type=Path, default=DEFAULT_DATA)
     train.add_argument("--out", type=Path, default=DEFAULT_MODEL)
     train.add_argument("--epochs", type=int, default=80)
+
+    evaluate = commands.add_parser(
+        "evaluate", help="score a model on recordings it was not trained on"
+    )
+    evaluate.add_argument("data", type=Path, help="samples recorded with `yishou collect --data`")
+    evaluate.add_argument(
+        "--model", default=str(DEFAULT_MODEL), help="local directory or Hugging Face repo id"
+    )
 
     demo = commands.add_parser("demo", help="run the live webcam demo")
     demo.add_argument(
@@ -50,6 +58,10 @@ def main(argv: list[str] | None = None) -> None:
             from yishou.train import train
 
             train(args.data, args.out, epochs=args.epochs)
+        case "evaluate":
+            from yishou.evaluate import evaluate
+
+            evaluate(args.model, args.data)
         case "demo":
             from yishou.demo import demo
 

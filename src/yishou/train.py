@@ -36,6 +36,17 @@ def print_confusion(matrix: np.ndarray) -> None:
         print(f"{name:>5} " + "".join(f"{count:>5}" for count in row))
 
 
+def per_gesture_accuracy(matrix: np.ndarray) -> dict[str, float]:
+    """The share of each gesture's frames that were read correctly, for gestures with frames."""
+    return {
+        gesture.name: round(
+            float(matrix[gesture.label, gesture.label] / matrix[gesture.label].sum()), 4
+        )
+        for gesture in GESTURES
+        if matrix[gesture.label].sum() > 0
+    }
+
+
 def train(
     data_path: Path,
     out_dir: Path,
@@ -104,14 +115,9 @@ def train(
     matrix = confusion_matrix(predicted, y_val)
     print_confusion(matrix)
 
-    per_gesture = {
-        gesture.name: round(matrix[gesture.label, gesture.label] / matrix[gesture.label].sum(), 4)
-        for gesture in GESTURES
-        if matrix[gesture.label].sum() > 0
-    }
     metrics: dict[str, object] = {
         "val_accuracy": round(best_accuracy, 4),
-        "val_accuracy_per_gesture": per_gesture,
+        "val_accuracy_per_gesture": per_gesture_accuracy(matrix),
         "train_samples": len(train_samples),
         "val_samples": len(val_samples),
         "epochs": epochs,
