@@ -34,11 +34,25 @@ I wanted to know whether a model could learn the Chinese number shapes, and how 
 | 7      | Thumb, index and middle fingertips pinched together |
 | 8      | Thumb and index finger out in an L shape            |
 | 9      | Index finger hooked, others folded                  |
-| 10     | Closed fist                                         |
+| 10     | Closed fist, or index and middle fingers crossed    |
 
-These follow the most common mainland Chinese convention. Some numbers have regional variants, and the model learns whichever variant it is shown.
+These follow the most common mainland Chinese convention. Some numbers have regional variants, and the model learns whichever variant it is shown. It knows two of them, each recorded as extra examples of the same number.
 
-I also taught the model the German 3 (thumb, index and middle finger), recorded as extra examples of 3. The French 2 (thumb and index) could not go in the same way, because it is the same hand shape as the Chinese 8 and the model has no way to tell which one you mean.
+- **3, the German way.** Thumb, index and middle finger, as well as the Chinese index, middle and ring
+- **10, crossed fingers.** Index and middle fingers crossed into the shape of 十, the character for ten. Some regions of China use it instead of the fist, as a reader of my LinkedIn post pointed out
+
+The French 2 (thumb and index) could not go in the same way, because it is the same hand shape as the Chinese 8 and the model has no way to tell which one you mean.
+
+### Easter eggs
+
+The live demo also hides two hand signs that are not numbers. Each has its own class, so the model does not mistake the rock sign for 6 or the OK sign for 3.
+
+| Sign    | Hand shape                                                                            |
+| ------- | ------------------------------------------------------------------------------------- |
+| rock 🤘 | Index and little finger up, in two variants, thumb folded over the others or held out |
+| OK 👌   | Thumb and index fingertips touching in a circle, other three fingers up               |
+
+Try them in the [live demo](https://yishou.sparkup.dev/).
 
 ## How it works
 
@@ -48,20 +62,20 @@ webcam frame -> MediaPipe hand landmarks -> normalised features -> MLP -> number
 
 1. **Tracking.** MediaPipe finds 21 landmarks on the hand in each frame.
 2. **Features.** The landmarks are normalised so that only the shape of the hand is left. The wrist moves to the origin, the palm is scaled to length 1 and rotated to point up, and left hands are mirrored into right hands. That gives 63 numbers per frame.
-3. **Classifier.** A small PyTorch MLP maps those 63 numbers to one of 11 classes, the ten numbers plus "none" for any other hand shape.
+3. **Classifier.** A small PyTorch MLP maps those 63 numbers to one of 13 classes, the ten numbers, "none" for any other hand shape, and the two Easter eggs.
 4. **Smoothing.** The demo averages the class probabilities over the last seven frames, so the number on screen does not flicker and the confidence bar always belongs to the number shown.
 
 The classifier never sees pixels, so it is tiny, trains in seconds on a CPU, and does not depend on lighting or background.
 
 ## Results
 
-The published model reads **96.4%** of validation frames correctly. They are 4,051 frames from recordings held out whole, with 7,052 frames left for training.
+The published model reads **97.5%** of validation frames correctly. They are 4,990 frames from recordings held out whole, with 9,495 frames left for training.
 
-| Gesture  | none | 1    | 2    | 3   | 4   | 5    | 6    | 7   | 8    | 9   | 10  |
-| -------- | ---- | ---- | ---- | --- | --- | ---- | ---- | --- | ---- | --- | --- |
-| Accuracy | 95%  | 100% | 100% | 93% | 99% | 100% | 100% | 97% | 100% | 91% | 86% |
+| Gesture  | none | 1    | 2    | 3   | 4    | 5    | 6    | 7   | 8    | 9   | 10  | rock | OK   |
+| -------- | ---- | ---- | ---- | --- | ---- | ---- | ---- | --- | ---- | --- | --- | ---- | ---- |
+| Accuracy | 100% | 100% | 100% | 92% | 100% | 100% | 100% | 98% | 100% | 89% | 90% | 100% | 100% |
 
-Most of the misses come from three pairs of shapes. A closed fist (10) is sometimes read as "none", the hooked index of 9 as a fist, and 7 as 2. In each case fingers fold or bunch together, which is where the 21 landmarks are least reliable.
+Most of the misses come from a few pairs of shapes. The hooked index of 9 is sometimes read as a fist, the crossed 10 as 2, 3 as 7, and 7 as 2. In each case fingers fold, cross or bunch together, which is where the 21 landmarks are least reliable.
 
 These numbers come from my own hand, so they are an upper bound. `yishou evaluate` (below) measures the model on someone else's.
 
@@ -102,6 +116,8 @@ uv run yishou collect
 | `1` to `9` | Select that number      |
 | `0`        | Select ten              |
 | `n`        | Select "none"           |
+| `r`        | Select the rock sign    |
+| `o`        | Select the OK sign      |
 | `space`    | Start or stop recording |
 | `q`        | Quit                    |
 
@@ -146,7 +162,7 @@ This uploads the model with a generated model card, which lists the validation a
 ## Limitations
 
 > [!WARNING]
-> **Model limitations.** The model I trained learnt from a very small dataset, about 11,100 webcam frames recorded by one person. Making it reliable would take more than data. Someone would have to decide which counting conventions to prioritise, and how to handle shapes that mean different numbers in different countries, such as the French 2 and the Chinese 8 above.
+> **Model limitations.** The model I trained learnt from a very small dataset, about 14,500 webcam frames recorded by one person. Making it reliable would take more than data. Someone would have to decide which counting conventions to prioritise, and how to handle shapes that mean different numbers in different countries, such as the French 2 and the Chinese 8 above.
 
 This is a learning project. The model has seen one person's hands, on one webcam, in one room, so it will do worse on anyone else. A model meant for real use would need a dataset built very differently.
 
