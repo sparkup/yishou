@@ -32,7 +32,8 @@ def test_confidence_matches_the_number_shown() -> None:
     for probabilities in [sure(5, 0.9), sure(5, 0.7), sure(2, 0.6), sure(5, 0.8)]:
         averaged = smoother.update(probabilities)
     assert averaged.argmax() == 5
-    assert averaged[5] == pytest.approx((0.9 + 0.7 + 0.8 + 0.04) / 4, abs=1e-6)
+    spread = (1 - 0.6) / (NUM_CLASSES - 1)  # what the frame showing 2 puts on 5
+    assert averaged[5] == pytest.approx((0.9 + 0.7 + 0.8 + spread) / 4, abs=1e-6)
 
 
 def test_frames_without_a_hand_count_as_none() -> None:

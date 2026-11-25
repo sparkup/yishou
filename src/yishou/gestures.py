@@ -1,8 +1,12 @@
-"""The gesture vocabulary: one class per number, plus a "none" class.
+"""The gesture vocabulary: one class per number, a "none" class and two Easter eggs.
 
 The shapes follow the most common mainland Chinese convention. Several numbers
 have regional variants (10 is also shown as crossed index and middle fingers,
 for instance), so record whichever variant you want the model to learn.
+
+Two extra gestures are not numbers: the rock sign and the OK sign, the Easter
+eggs of the web demo. They have their own classes so the model does not mistake
+them for 6 or 3.
 """
 
 from dataclasses import dataclass
@@ -29,12 +33,17 @@ GESTURES: tuple[Gesture, ...] = (
     Gesture(8, "8", "Thumb and index finger out in an L shape"),
     Gesture(9, "9", "Index finger hooked, others folded"),
     Gesture(10, "10", "Closed fist"),
+    Gesture(11, "rock", "Index and little finger up, thumb folded over the others or held out"),
+    Gesture(12, "ok", "Thumb and index fingertips touching in a circle, other three up"),
 )
 
 NUM_CLASSES = len(GESTURES)
 
-# Keyboard keys used while collecting: 1-9 for themselves, 0 for ten, n for none.
+# Keyboard keys used while collecting: 1-9 for themselves, 0 for ten, n for none,
+# r for rock and o for OK.
 KEY_TO_LABEL: dict[str, int] = {str(n): n for n in range(1, 10)} | {
     "0": 10,
     "n": NONE_LABEL,
+    "r": 11,
+    "o": 12,
 }

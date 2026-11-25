@@ -45,7 +45,7 @@ def collect(data_path: Path, camera_index: int = 0) -> None:
             )
             draw_text(
                 frame,
-                "1-9, 0 = ten, n = none | space = record | q = quit",
+                "1-9, 0 = ten, n = none, r = rock, o = OK | space = record | q = quit",
                 (20, frame.shape[0] - 20),
                 scale=0.55,
             )

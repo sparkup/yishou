@@ -27,7 +27,7 @@ the 21 hand landmarks produced by MediaPipe.
 
 - **Input:** 63 features, the (x, y, z) of each landmark after normalising for
   position, scale, in-plane rotation and left/right hand
-- **Output:** {num_classes} classes, the numbers 1 to 10 plus "none"
+- **Output:** {num_classes} classes, the numbers 1 to 10, "none" and two Easter eggs (rock and OK)
 - **Code:** {github_url}
 
 ## Gestures
