@@ -32,7 +32,7 @@ GESTURES: tuple[Gesture, ...] = (
     Gesture(7, "7", "Thumb, index and middle fingertips pinched together"),
     Gesture(8, "8", "Thumb and index finger out in an L shape"),
     Gesture(9, "9", "Index finger hooked, others folded"),
-    Gesture(10, "10", "Closed fist"),
+    Gesture(10, "10", "Closed fist, or index and middle fingers crossed"),
     Gesture(11, "rock", "Index and little finger up, thumb folded over the others or held out"),
     Gesture(12, "ok", "Thumb and index fingertips touching in a circle, other three up"),
 )

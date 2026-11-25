@@ -18,7 +18,7 @@ def test_card_lists_every_gesture_and_the_accuracy(tmp_path: Path) -> None:
 
     card = model_card(tmp_path, "someone/yishou")
     assert "95.7%" in card
-    assert "| 10 | Closed fist | 86.3% |" in card
+    assert "| 10 | Closed fist, or index and middle fingers crossed | 86.3% |" in card
     assert "| 1 | Index finger up | n/a |" in card
     assert "yishou demo --model someone/yishou" in card
     for gesture in GESTURES:
