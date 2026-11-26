@@ -3,8 +3,10 @@
 import numpy as np
 import pytest
 
-from yishou.demo import Smoother
-from yishou.gestures import NONE_LABEL, NUM_CLASSES
+from yishou.demo import Smoother, gesture_text
+from yishou.features import THUMB
+from yishou.gestures import NONE_LABEL, NUM_CLASSES, Gesture
+from yishou.tracking import Hand
 
 
 def sure(label: int, confidence: float = 0.9) -> np.ndarray:
@@ -41,3 +43,12 @@ def test_frames_without_a_hand_count_as_none() -> None:
     smoother.update(sure(4))
     smoother.update(None)
     assert smoother.update(None).argmax() == NONE_LABEL
+
+
+def test_a_pointer_gesture_shows_its_direction() -> None:
+    thumb = Gesture(13, "thumb", "Thumb out, other fingers folded", pointer=THUMB)
+    points = np.zeros((21, 3), dtype=np.float32)
+    points[THUMB[1], 1] = 200  # tip below the base: pointing down
+    assert gesture_text(thumb, Hand(points, "Right")) == "thumb down"
+    assert gesture_text(thumb, None) == "thumb"
+    assert gesture_text(Gesture(5, "5", "Open hand"), Hand(points, "Right")) == "5"

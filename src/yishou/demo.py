@@ -6,11 +6,11 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from yishou.features import to_features
-from yishou.gestures import GESTURES, NONE_LABEL
+from yishou.features import pointing, to_features
+from yishou.gestures import GESTURES, NONE_LABEL, Gesture
 from yishou.model import GestureMLP
 from yishou.overlay import draw_hand, draw_number, draw_text, open_window
-from yishou.tracking import HandTracker, frames
+from yishou.tracking import Hand, HandTracker, frames
 
 WINDOW = "yishou"
 
@@ -32,6 +32,13 @@ class Smoother:
         """Add one frame, None when no hand was found, and return the averaged probabilities."""
         self._recent.append(self._no_hand if probabilities is None else probabilities)
         return np.mean(self._recent, axis=0)
+
+
+def gesture_text(gesture: Gesture, hand: Hand | None) -> str:
+    """The text to show for a gesture, with its direction when it has a pointer finger."""
+    if gesture.pointer is None or hand is None:
+        return gesture.name
+    return f"{gesture.name} {pointing(hand.points, gesture.pointer)}"
 
 
 def demo(
@@ -64,7 +71,7 @@ def demo(
                 label = int(averaged.argmax())
                 confidence = float(averaged[label])
                 if label != NONE_LABEL and confidence >= threshold:
-                    draw_number(frame, GESTURES[label].name, confidence)
+                    draw_number(frame, gesture_text(GESTURES[label], hand), confidence)
                 draw_text(frame, "q = quit", (20, frame.shape[0] - 20), scale=0.55)
 
                 if record_path is not None:

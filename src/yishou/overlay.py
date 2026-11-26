@@ -50,8 +50,11 @@ def draw_text(
 
 
 def draw_number(frame: np.ndarray, text: str, confidence: float) -> None:
-    """The predicted number, large, in the top-left corner, with a confidence bar."""
-    draw_text(frame, text, (30, 170), scale=6.0)
+    """The predicted number, large, in the top-left corner, with a confidence bar.
+
+    Longer labels such as "thumb down" are drawn smaller so they fit the frame.
+    """
+    draw_text(frame, text, (30, 170), scale=min(6.0, 24 / len(text)))
     bar_width = 220
     cv2.rectangle(frame, (30, 200), (30 + bar_width, 214), BLACK, -1)
     cv2.rectangle(frame, (30, 200), (30 + int(bar_width * confidence), 214), GREEN, -1)

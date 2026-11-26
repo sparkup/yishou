@@ -15,6 +15,10 @@ FEATURE_DIM = NUM_LANDMARKS * 3
 WRIST = 0
 MIDDLE_MCP = 9  # knuckle at the base of the middle finger
 
+# Fingers as (base, tip) landmark pairs, for gestures where the direction matters
+THUMB = (2, 4)
+INDEX = (5, 8)
+
 
 def to_features(points: np.ndarray, handedness: str) -> np.ndarray:
     """Normalise (21, 3) pixel-space landmarks into a flat (63,) feature vector.
@@ -48,3 +52,17 @@ def to_features(points: np.ndarray, handedness: str) -> np.ndarray:
         pts /= scale
 
     return pts.reshape(-1)
+
+
+def pointing(points: np.ndarray, finger: tuple[int, int]) -> str:
+    """Which way a finger points on screen: "up", "down", "left" or "right".
+
+    The features above throw the hand's rotation away on purpose, so the model
+    sees a thumb up and a thumb down as the same shape. This reads the direction
+    back from the raw (21, 3) pixel landmarks, from the finger's base to its tip.
+    """
+    base, tip = finger
+    dx, dy = points[tip, :2] - points[base, :2]
+    if abs(dy) >= abs(dx):
+        return "up" if dy < 0 else "down"  # image y grows downwards
+    return "right" if dx > 0 else "left"

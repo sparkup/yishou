@@ -7,6 +7,10 @@ for instance), so record whichever variant you want the model to learn.
 Two extra gestures are not numbers: the rock sign and the OK sign, the Easter
 eggs of the web demo. They have their own classes so the model does not mistake
 them for 6 or 3.
+
+A gesture can also name a `pointer` finger. The model then learns one class
+whatever the hand's angle, and the demo adds the direction that finger points,
+so a single "thumb" class reads as "thumb up" or "thumb down".
 """
 
 from dataclasses import dataclass
@@ -17,6 +21,7 @@ class Gesture:
     label: int
     name: str
     description: str
+    pointer: tuple[int, int] | None = None  # (base, tip) landmarks, see yishou.features.THUMB
 
 
 NONE_LABEL = 0

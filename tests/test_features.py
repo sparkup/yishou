@@ -3,7 +3,7 @@
 import numpy as np
 import pytest
 
-from yishou.features import FEATURE_DIM, MIDDLE_MCP, to_features
+from yishou.features import FEATURE_DIM, MIDDLE_MCP, THUMB, pointing, to_features
 
 
 @pytest.fixture
@@ -64,3 +64,14 @@ def test_left_hand_matches_mirrored_right_hand(hand: np.ndarray) -> None:
 def test_rejects_wrong_shape() -> None:
     with pytest.raises(ValueError):
         to_features(np.zeros((20, 3)), "Right")
+
+
+@pytest.mark.parametrize(
+    ("tip", "expected"),
+    [((300, 100), "up"), ((300, 500), "down"), ((100, 290), "left"), ((500, 310), "right")],
+)
+def test_pointing_reads_the_direction_on_screen(tip: tuple[int, int], expected: str) -> None:
+    points = np.zeros((21, 3), dtype=np.float32)
+    points[THUMB[0], :2] = (300, 300)
+    points[THUMB[1], :2] = tip
+    assert pointing(points, THUMB) == expected
