@@ -159,6 +159,42 @@ uv run yishou push your-username/yishou
 
 This uploads the model with a generated model card, which lists the validation accuracy of each gesture. Anyone can then run it with `yishou demo --model your-username/yishou`.
 
+## Add your own gesture
+
+The vocabulary lives in [`src/yishou/gestures.py`](src/yishou/gestures.py), so adding a gesture takes three lines of code and a new recording. Thumbs up and thumbs down make a good example, for instance to let viewers vote with their hand during a live.
+
+### 1. Declare it
+
+Give it the next free number, a name and a key to select it while recording.
+
+```python
+# At the top of gestures.py
+from yishou.features import THUMB
+
+# At the end of GESTURES
+    Gesture(13, "thumb", "Thumb out, other fingers folded", pointer=THUMB),
+
+# At the end of KEY_TO_LABEL
+    "t": 13,
+```
+
+The features ignore how the hand is rotated, so that a 3 is still a 3 when the hand is tilted. That also means the model cannot tell a thumb up from a thumb down, and `pointer=THUMB` is there for that. The model learns a single "thumb" class, and the demo reads which way the thumb points from the raw landmarks and shows "thumb up" or "thumb down". `INDEX` works the same way, for a finger pointing left or right.
+
+### 2. Record it
+
+Run `uv run yishou collect`, press `t`, hold your thumb up and press space to record. Move your hand around, closer and further away, then press space again to stop. Do the same with your thumb down, under the same key, and with your other hand. Five or six short bursts in each direction are enough to start.
+
+The published model has never seen the new gesture, so you train your own, and it needs the other gestures too. If you have not recorded them yet, record them in the same session, as described in [Record samples](#1-record-samples).
+
+### 3. Train and try it
+
+```bash
+uv run yishou train
+uv run yishou demo
+```
+
+The confusion matrix printed by `train` shows whether the new gesture gets mixed up with an existing one. A fist with the thumb out is close to 10, for instance. If it is, record a few more bursts of both.
+
 ## Limitations
 
 > [!WARNING]
