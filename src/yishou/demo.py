@@ -46,14 +46,16 @@ def demo(
     camera_index: int = 0,
     threshold: float = 0.6,
     record_path: Path | None = None,
+    revision: str | None = None,
 ) -> None:
     """Run the live demo until q is pressed.
 
-    `model_id` is a local directory or a Hugging Face repo id. Predictions whose
+    `model_id` is a local directory or a Hugging Face repo id, and `revision` a branch
+    of that repo. Predictions whose
     averaged confidence is below `threshold` are shown as no number. `record_path` saves the
     preview, overlay included, as an mp4.
     """
-    model = GestureMLP.from_pretrained(model_id)
+    model = GestureMLP.from_pretrained(model_id, revision=revision)
     smoother = Smoother(model.num_classes)
     video: cv2.VideoWriter | None = None
 

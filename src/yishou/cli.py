@@ -30,11 +30,13 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate.add_argument(
         "--model", default=str(DEFAULT_MODEL), help="local directory or Hugging Face repo id"
     )
+    evaluate.add_argument("--revision", default=None, help="a branch of the Hugging Face repo")
 
     demo = commands.add_parser("demo", help="run the live webcam demo")
     demo.add_argument(
         "--model", default=str(DEFAULT_MODEL), help="local directory or Hugging Face repo id"
     )
+    demo.add_argument("--revision", default=None, help="a branch of the Hugging Face repo")
     demo.add_argument("--camera", type=int, default=0)
     demo.add_argument("--threshold", type=float, default=0.6)
     demo.add_argument("--record", type=Path, default=None, help="save the preview as an mp4")
@@ -64,11 +66,11 @@ def main(argv: list[str] | None = None) -> None:
         case "evaluate":
             from yishou.evaluate import evaluate
 
-            evaluate(args.model, args.data)
+            evaluate(args.model, args.data, args.revision)
         case "demo":
             from yishou.demo import demo
 
-            demo(args.model, args.camera, args.threshold, args.record)
+            demo(args.model, args.camera, args.threshold, args.record, args.revision)
         case "push":
             from yishou.hub import push
 
