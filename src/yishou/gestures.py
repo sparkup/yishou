@@ -15,6 +15,8 @@ so a single "thumb" class reads as "thumb up" or "thumb down".
 
 from dataclasses import dataclass
 
+from yishou.features import THUMB
+
 
 @dataclass(frozen=True, slots=True)
 class Gesture:
@@ -40,15 +42,17 @@ GESTURES: tuple[Gesture, ...] = (
     Gesture(10, "10", "Closed fist, or index and middle fingers crossed"),
     Gesture(11, "rock", "Index and little finger up, thumb folded over the others or held out"),
     Gesture(12, "ok", "Thumb and index fingertips touching in a circle, other three up"),
+    Gesture(13, "thumb", "Thumb out, other fingers folded, up or down", pointer=THUMB),
 )
 
 NUM_CLASSES = len(GESTURES)
 
 # Keyboard keys used while collecting: 1-9 for themselves, 0 for ten, n for none,
-# r for rock and o for OK.
+# r for rock, o for OK and t for the thumb.
 KEY_TO_LABEL: dict[str, int] = {str(n): n for n in range(1, 10)} | {
     "0": 10,
     "n": NONE_LABEL,
     "r": 11,
     "o": 12,
+    "t": 13,
 }

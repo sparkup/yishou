@@ -11,6 +11,9 @@ Count from 1 to 10 on one hand, and have a webcam read it back.
 
 It runs entirely in your browser, with nothing to install, and no image ever leaves your device.
 
+> [!NOTE]
+> This branch adds a thumb, which the demo reads as thumb up or thumb down. It is the example from [Add your own gesture](#add-your-own-gesture) applied, and its model is on the `thumbs` branch of the [Hugging Face repo](https://huggingface.co/dworsleytonks/yishou/tree/thumbs).
+
 In the West, one hand counts to five. In China, one hand counts to ten, because the numbers 6 to 10 each have their own hand shape. This project trains a small classifier to recognise all ten from a webcam feed and show the number on screen.
 
 ## Why this project
@@ -118,6 +121,7 @@ uv run yishou collect
 | `n`        | Select "none"           |
 | `r`        | Select the rock sign    |
 | `o`        | Select the OK sign      |
+| `t`        | Select the thumb        |
 | `space`    | Start or stop recording |
 | `q`        | Quit                    |
 
