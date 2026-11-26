@@ -195,6 +195,36 @@ uv run yishou demo
 
 The confusion matrix printed by `train` shows whether the new gesture gets mixed up with an existing one. A fist with the thumb out is close to 10, for instance. If it is, record a few more bursts of both.
 
+### Or start from a clean slate
+
+If you only need a few gestures, a vote for instance, keep just those. Leave "none" and your own gestures in `GESTURES`, numbered from 0 in order, give each one a key in `KEY_TO_LABEL`, and record into a new file.
+
+```python
+GESTURES = (
+    Gesture(0, "none", "Any hand shape that is not a vote"),
+    Gesture(1, "thumb", "Thumb out, other fingers folded", pointer=THUMB),
+)
+
+KEY_TO_LABEL = {"n": 0, "t": 1}
+```
+
+```bash
+uv run yishou collect --data data/vote.csv
+uv run yishou train --data data/vote.csv
+uv run yishou demo
+```
+
+A model with fewer classes has fewer ways to get confused, and needs a lot less recording.
+
+### A ready-made example
+
+The [`thumbs` branch](https://github.com/sparkup/yishou/tree/thumbs) is this guide applied to the full model, with all the gestures plus the thumb. Its trained model is on the `thumbs` branch of the Hugging Face repo, so you can try it without recording anything.
+
+```bash
+git checkout thumbs
+uv run yishou demo --model dworsleytonks/yishou --revision thumbs
+```
+
 ## Limitations
 
 > [!WARNING]
